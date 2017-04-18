@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.flyjun.view.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:id="@+id/layout"
+    >
+
+
+    <TextView
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:textSize="50px"
+        android:textColor="@android:color/black"
+        android:background="@android:color/darker_gray"
+        android:text="hello"/>
+
+
+    <com.flyjun.view.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="520px"
+            android:layout_height="520px"
+            android:textSize="80px"
+            android:textColor="@android:color/holo_red_light"
+            android:background="@android:color/holo_green_light"
+            android:text="AutoView"/>
+
+    </com.flyjun.view.AutoRelativeLayout>
+
+
+    <include layout="@layout/inlayout"/>
+
+</com.flyjun.view.AutoLinearLayout>

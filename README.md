@@ -67,7 +67,7 @@ AutoView使用大法
     
 4、AutoView支持的属性几乎涵盖了所有
  
-            android.R.attr.textSize,// 0
+            android.R.attr.textSize
 
             android.R.attr.padding
             android.R.attr.paddingLeft

@@ -95,3 +95,6 @@ AutoView使用大法
    
       AutoView.getAutoSize(this,120)
   
+7、如果需要适配横竖屏，那么需要values-land的dimens和values的dimens一起来操作即可
+   比如都有一个宽度width，都引用这个值即可
+

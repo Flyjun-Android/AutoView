@@ -57,7 +57,18 @@ AutoView使用大法
 
     <include layout="@layout/inlayout"/>
 
-</com.flyjun.view.AutoLinearLayout>
+    </com.flyjun.view.AutoLinearLayout>
+   
+   
+   
+   你只需要做的的是
+   
+       LinearLayout->AutoLinearLayout 
+   
+       RelativeLayout->AutoRelativeLayout
+   
+       FrameLayout->AutoFrameLayout
+
 
 
 注意，如果你的跟布局也需要适配，需要加上

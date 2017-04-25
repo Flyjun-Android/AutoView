@@ -1,7 +1,7 @@
 # AutoView
 
 android适配是繁琐的事，分辨率多样，考虑因素多，并且ui设计图还是px单位的，这时候你就需要AutoView了，AutoView可以帮你做什么呢？写多个dimens文件？
-还是需要写很多的代码？no，这些都不用了，开发还是和之前的一样，而且还可以轻松的和ui设计图对应上
+还是需要写很多的代码？no，这些都不用了，开发还是和之前的一样，而且还可以轻松的和ui设计图对应上（px单位适配，内部会自适应分辨率大小）
 
 AutoView使用大法
 
@@ -20,8 +20,8 @@ AutoView使用大法
   第二个参数为你ui设计图设计的基准尺寸（比如1080 * 1920就是1080，720 * 1280就是720，默认是1080的）
   需要在setContentView之前执行
   
-3、在你的布局layout文件中这么使用
-  
+3、在你的布局layout文件中这么使用，ui图上标记的px像素值你可以直接对号入座了
+  
     <?xml version="1.0" encoding="utf-8"?>
     <com.flyjun.view.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"

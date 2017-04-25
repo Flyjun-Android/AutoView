@@ -20,18 +20,16 @@ AutoView使用大法
   第二个参数为你ui设计图设计的基准尺寸（比如1080 * 1920就是1080，720 * 1280就是720，默认是1080的）
   需要在setContentView之前执行
   
-3、在你的布局layout文件中这么使用，ui图上标记的px像素值你可以直接对号入座了
-  
+3、在你的布局layout文件中这么使用（ui图上标记的px像素值你可以直接对号入座了）
+    
     <?xml version="1.0" encoding="utf-8"?>
-    <com.flyjun.view.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <com.flyjun.view.AutoLinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
     android:orientation="vertical"
     android:id="@+id/layout"
     >
-
-
     <TextView
         android:layout_width="200px"
         android:layout_height="200px"
@@ -39,8 +37,6 @@ AutoView使用大法
         android:textColor="@android:color/black"
         android:background="@android:color/darker_gray"
         android:text="hello"/>
-
-
     <com.flyjun.view.AutoRelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -51,12 +47,8 @@ AutoView使用大法
             android:textColor="@android:color/holo_red_light"
             android:background="@android:color/holo_green_light"
             android:text="AutoView"/>
-
     </com.flyjun.view.AutoRelativeLayout>
-
-
     <include layout="@layout/inlayout"/>
-
     </com.flyjun.view.AutoLinearLayout>
    
    
@@ -68,7 +60,6 @@ AutoView使用大法
        RelativeLayout->AutoRelativeLayout
    
        FrameLayout->AutoFrameLayout
-
 
 
 注意，如果你的跟布局也需要适配，需要加上
